@@ -91,7 +91,7 @@ console.log(allepisodes)
 - Não use template strings.
 */
 
-const bookMessage = `''O Conto da Aia' 'é um dos livros mais vendidos da década.'`
+const bookMessage = '\'O Conto da Aia\' \'é um dos livros mais vendidos da década.'
 console.log(bookMessage)
 
 
@@ -107,10 +107,11 @@ console.log(bookMessage)
 - Exiba a "newName" no console;
 */
 
-const name = 'walter white'
-
-
+const name = 'walter white';
+let newName = name
+newName = newName[0,7].replace("w","W") + newName.slice(1,7) + newName[7].replace("w","W")+ newName.slice(8,12)
 console.log(newName)
+//console.log(newName[0].toUpperCase() + newName.slice(1,7) + newName[7].toUpperCase()+ newName.slice(8,12))
 
 
 
@@ -125,5 +126,6 @@ console.log(newName)
 */
 
 
- 
+ newName = "O ator mais famoso de 2008 é: " + newName 
+ console.log(newName)
 
