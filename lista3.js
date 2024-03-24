@@ -9,7 +9,7 @@
 */
 
 const harryPotterAuthor = 'J.K. Rowling'
-console.log(harryPotterAuthor.slice(0,1)+ harryPotterAuthor.slice(2,3))
+console.log(harryPotterAuthor.slice(0,4))
 
 
 /*
@@ -44,9 +44,9 @@ console.log(reminder)
 - O valor exibido no console deve ser 7.
 */
 
-//let episodes = 6
-//episodes = episodes + 1 
-//console.log(episodes)
+let episodes = 6
+episodes++
+console.log(episodes)
 
 
 /*
@@ -57,9 +57,8 @@ console.log(reminder)
 - O valor exibido no console deve ser 6.
 */
 
-//let episodes = 1
-//episodes = episodes + 5
-//console.log(episodes)
+episodes--
+console.log(episodes)
 
 
 /*
@@ -69,7 +68,7 @@ console.log(reminder)
 - Após a atribuição, exiba a let "episodes" no console.
 */
 
-let episodes = 6 
+
 console.log(episodes += 4)
 
 /*
@@ -79,9 +78,8 @@ console.log(episodes += 4)
 - Insira a let "episodes" no lugar de "NUMERO_DE_EPISÓDIOS";
 - Exiba a "allEpisodes" no console.
 */
-const frase = 'O nº de episódios é: NUMERO_DE_EPISÓDIOS'
-let allepisodes = frase.replace("NUMERO_DE_EPISÓDIOS", episodes)
-console.log(allepisodes)
+const allepisodes = 'O nº de episódios é: NUMERO_DE_EPISÓDIOS'
+console.log(allepisodes.replace("NUMERO_DE_EPISÓDIOS", episodes))
 /*
 08 - Comente o console.log acima, e,
 
@@ -91,7 +89,7 @@ console.log(allepisodes)
 - Não use template strings.
 */
 
-const bookMessage = '\'O Conto da Aia\' \'é um dos livros mais vendidos da década.'
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
 console.log(bookMessage)
 
 
@@ -111,7 +109,9 @@ const name = 'walter white';
 let newName = name
 newName = newName[0,7].replace("w","W") + newName.slice(1,7) + newName[7].replace("w","W")+ newName.slice(8,12)
 console.log(newName)
+
 //console.log(newName[0].toUpperCase() + newName.slice(1,7) + newName[7].toUpperCase()+ newName.slice(8,12))
+//newName = newName[0,7].replace("w","W") + newName.slice(1,7) + newName[7].replace("w","W")+ newName.slice(8,12)
 
 
 
@@ -126,6 +126,6 @@ console.log(newName)
 */
 
 
- newName = `"O ator mais famoso de 2008 é: ${newName}"`
+ newName = `o ${newName} é um dos integrantes da serie: Breaking Bad`
  console.log(newName)
 
